@@ -1,0 +1,7 @@
+width=600
+height=400
+location=center
+show=drun
+prompt=Clipboard History...
+allow_images=true
+image_size=48

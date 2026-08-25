@@ -1,0 +1,5 @@
+alias s='sudo -v && sudo'
+alias sp='sudo -S pacman'
+alias syu='sudo -S pacman -Syu'
+alias si='sudo -S pacman -S --needed --noconfirm'
+alias sr='sudo -S pacman -Rns'

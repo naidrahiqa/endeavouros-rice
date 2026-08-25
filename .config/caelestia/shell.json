@@ -1,0 +1,36 @@
+{
+    "appearance": {
+        "transparency": {
+            "base": 0.6,
+            "enabled": true,
+            "layers": 0.48
+        }
+    }
+    },
+    "background": {
+        "desktopClock": {
+            "background": {
+                "blur": true,
+                "enabled": true,
+                "opacity": 0.85
+            },
+            "enabled": true,
+            "invertColors": true,
+            "position": "bottom-right",
+            "scale": 0.6
+        }
+    },
+    "general": {
+        "apps": {
+            "terminal": [
+                "kitty"
+            ]
+        }
+    },
+    "notifs": {
+        "actionOnClick": false
+    },
+    "services": {
+        "defaultPlayer": "Brave"
+    }
+}

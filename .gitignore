@@ -1,0 +1,54 @@
+# Cache and temporary files
+.cache/
+Cache/
+Code Cache/
+GPU_cache/
+Session Storage/
+Local Storage/
+IndexedDB/
+logs/
+databases/
+blob_storage/
+Service Worker/
+Crashpad/
+DawnGraphiteCache/
+DawnWebGPUCache/
+Dictionaries/
+
+# Large binary files
+*.ttf
+*.otf
+*.woff
+*.woff2
+*.png
+*.jpg
+*.jpeg
+*.gif
+!default_wallpaper.png
+
+# Build artifacts
+node_modules/
+build/
+dist/
+
+# SDDM logs
+*.log
+
+# User state files
+SingletonCookie
+SingletonLock
+SingletonSocket
+
+# Cookies and auth
+Cookies
+Cookies-journal
+DIPS
+DIPS-wal
+TransportSecurity
+Trust Tokens
+Trust Tokens-journal
+SharedStorage
+SharedStorage-wal
+Local State
+Network Persistent State
+Preferences

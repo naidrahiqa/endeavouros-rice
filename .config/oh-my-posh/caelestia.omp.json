@@ -1,0 +1,62 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "palette": {
+    "bg": "#0a0f0f",
+    "surface": "#1c6a66",
+    "accent": "#00969d",
+    "mint": "#a8f0eb",
+    "teal": "#00beab",
+    "dim": "#566160",
+    "text": "#e1fffc"
+  },
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "background": "p:surface",
+          "foreground": "p:text",
+          "leading_diamond": "\ue0c5",
+          "style": "diamond",
+          "template": " {{ .UserName }}@{{ .HostName }} ",
+          "trailing_diamond": "\ue0bc",
+          "type": "session"
+        },
+        {
+          "background": "p:accent",
+          "foreground": "p:text",
+          "leading_diamond": "\ue0c5",
+          "style": "diamond",
+          "template": " \uf4d3 {{ .Path }} ",
+          "trailing_diamond": "\ue0bc",
+          "type": "path"
+        },
+        {
+          "background": "p:teal",
+          "foreground": "p:bg",
+          "leading_diamond": "\ue0c5",
+          "style": "diamond",
+          "template": " \ue725 {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \u2206{{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }} ",
+          "trailing_diamond": "\ue0bc",
+          "type": "git"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "p:mint",
+          "style": "plain",
+          "template": "\u276f ",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "final_space": true,
+  "version": 4
+}

@@ -1,0 +1,52 @@
+# Catppuccin Mocha Theme for btop
+theme = "catppuccin-mocha"
+
+# Main colors
+BG="#1e1e2e"
+FG="#cdd6f4"
+CursorBackground="#f5e0dc"
+CursorForeground="#1e1e2e"
+TitleBackground="#1e1e2e"
+TitleForeground="#cdd6f4"
+
+# Selected
+SelectedBG="#313244"
+SelectedFG="#cdd6f4"
+
+# Misc
+UnselectedBG="#181825"
+UnselectedFG="#a6adc8"
+
+# Graph
+GraphLine="#cba6f7"
+GraphLineLow="#89b4fa"
+GraphLineMid="#a6e3a1"
+GraphLineHigh="#f38ba8"
+
+# CPU
+CpuBox="#cba6f7"
+CpuText="#cdd6f4"
+CpuMid="#89b4fa"
+CpuHigh="#f38ba8"
+
+# Memory
+MemBox="#89b4fa"
+MemText="#cdd6f4"
+MemMid="#a6e3a1"
+MemHigh="#f38ba8"
+
+# Net
+NetBox="#a6e3a1"
+NetText="#cdd6f4"
+NetUp="#fab387"
+NetDown="#89b4fa"
+
+# Disk
+DiskBox="#fab387"
+DiskText="#cdd6f4"
+DiskMid="#89b4fa"
+DiskHigh="#f38ba8"
+
+# Proc
+ProcBox="#f38ba8"
+ProcText="#cdd6f4"

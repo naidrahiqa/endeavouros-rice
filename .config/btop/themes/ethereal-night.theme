@@ -1,0 +1,73 @@
+# Ethereal Night theme for btop
+# Matching the anime wallpaper color palette
+
+# Main background
+theme[main_bg]="#141b2d"
+
+# Main text color
+theme[main_fg]="#e8e0f0"
+
+# Title color
+theme[title]="#b4a7d6"
+
+# Highlight
+theme[hi_fg]="#e8c547"
+
+# Selected bg
+theme[selected_bg]="#2a3560"
+theme[selected_fg]="#e8e0f0"
+
+# Inactive
+theme[inactive_fg]="#828aaa"
+
+# Process misc
+theme[proc_misc]="#6b8cc4"
+
+# Box borders
+theme[cpu_box]="#2a3560"
+theme[mem_box]="#2a3560"
+theme[net_box]="#2a3560"
+theme[proc_box]="#2a3560"
+
+# Graphs
+theme[cpu_start]="#6b8cc4"
+theme[cpu_mid]="#b4a7d6"
+theme[cpu_end]="#e8c547"
+
+theme[free_start]="#78c878"
+theme[free_mid]="#6b8cc4"
+theme[free_end]="#b4a7d6"
+
+theme[cached_start]="#b4a7d6"
+theme[cached_mid]="#9b8ec4"
+theme[cached_end]="#6b8cc4"
+
+theme[available_start]="#e8c547"
+theme[available_mid]="#b4a7d6"
+theme[available_end]="#6b8cc4"
+
+theme[used_start]="#dc5050"
+theme[used_mid]="#e8c547"
+theme[used_end]="#78c878"
+
+theme[download_start]="#6b8cc4"
+theme[download_mid]="#b4a7d6"
+theme[download_end]="#e8c547"
+
+theme[upload_start]="#78c878"
+theme[upload_mid]="#6b8cc4"
+theme[upload_end]="#b4a7d6"
+
+# Temps
+theme[temp_start]="#78c878"
+theme[temp_mid]="#e8c547"
+theme[temp_end]="#dc5050"
+
+# Meter gradient
+theme[meter_bg]="#2a3560"
+theme[process_start]="#6b8cc4"
+theme[process_mid]="#b4a7d6"
+theme[process_end]="#e8c547"
+
+# Divider line
+theme[div_line]="#2a3560"

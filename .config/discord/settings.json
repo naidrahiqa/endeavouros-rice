@@ -1,0 +1,17 @@
+{
+  "openH264Enabled": true,
+  "offloadAdmControls": true,
+  "BACKGROUND_COLOR": "#f3f3f4",
+  "DESKTOP_TTI_DNSTCP_WARMUP": true,
+  "DESKTOP_TTI_SPLASH_USE_WEBP": true,
+  "DESKTOP_TTI_EARLY_UPDATE_CHECK": true,
+  "chromiumSwitches": {},
+  "IS_MAXIMIZED": true,
+  "IS_MINIMIZED": false,
+  "WINDOW_BOUNDS": {
+    "x": 16,
+    "y": 10,
+    "width": 1280,
+    "height": 688
+  }
+}

@@ -1,0 +1,151 @@
+/**
+ * @name Midnight (Caelestia)
+ * @description A dark, rounded discord theme. Caelestia scheme colours.
+ * @author refact0r, esme, anubis
+ * @version 1.6.2
+ * @invite nz87hXyvcy
+ * @website https://github.com/refact0r/midnight-discord
+ * @authorId 508863359777505290
+ * @authorLink https://www.refact0r.dev
+*/
+@import url("https://refact0r.github.io/midnight-discord/build/midnight.css");
+body {
+  /* font options */
+  --font: "figtree"; /* change to '' for default discord font */
+  --code-font: "JetBrainsMono NF"; /* change to '' for default discord font */
+  font-weight: 400; /* normal text font weight. DOES NOT AFFECT BOLD TEXT */
+  /* sizes */
+  --gap: 12px; /* spacing between panels */
+  --divider-thickness: 4px; /* thickness of unread messages divider and highlighted message borders */
+  --border-thickness: 1px; /* thickness of borders around main panels. DOES NOT AFFECT OTHER BORDERS */
+  /* animation/transition options */
+  --animations: on; /* turn off to disable all midnight animations/transitions */
+  --list-item-transition: 0.2s ease; /* transition for list items */
+  --dms-icon-svg-transition: 0.4s ease; /* transition for the dms icon */
+  --border-hover-transition: 0.2s ease; /* transition for borders when hovered */
+  /* top bar options */
+  --top-bar-height: var(
+      --gap
+  ); /* height of the titlebar/top bar (discord default is 36px, 24px recommended if moving/hiding top bar buttons) */
+  --top-bar-button-position: titlebar; /* off: default position, hide: hide inbox/support buttons completely, serverlist: move inbox button to server list, titlebar: move inbox button to titlebar (will hide title) */
+  --top-bar-title-position: off; /* off: default centered position, hide: hide title completely, left: left align title (like old discord) */
+  --subtle-top-bar-title: off; /* off: default, on: hide the icon and use subtle text color (like old discord) */
+  /* window controls */
+  --custom-window-controls: on; /* turn off to use discord default window controls */
+  --window-control-size: 14px; /* size of custom window controls */
+  /* dms button icon options */
+  --custom-dms-icon: custom; /* off: use default discord icon, hide: remove icon entirely, custom: use custom icon */
+  --dms-icon-svg-url: url("https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg"); /* icon svg url. MUST BE A SVG. */
+  --dms-icon-svg-size: 90%; /* size of the svg (css mask-size) */
+  --dms-icon-color-before: var(--icon-subtle); /* normal icon color */
+  --dms-icon-color-after: var(--white); /* icon color when button is hovered/selected */
+  /* dms button background options */
+  --custom-dms-background: off; /* off to disable, image to use a background image (must set url variable below), color to use a custom color/gradient */
+  --dms-background-image-url: url(""); /* url of the background image */
+  --dms-background-image-size: cover; /* size of the background image (css background-size) */
+  --dms-background-color: linear-gradient(
+      70deg,
+      var(--blue-2),
+      var(--purple-2),
+      var(--red-2)
+  ); /* fixed color/gradient (css background) */
+  /* background image options */
+  --background-image: off; /* turn on to use a background image */
+  --background-image-url: url(""); /* url of the background image */
+  /* transparency/blur options */
+  /* NOTE: TO USE TRANSPARENCY/BLUR, YOU MUST HAVE TRANSPARENT BG COLORS. FOR EXAMPLE: --bg-4: hsla(220, 15%, 10%, 0.7); */
+  --transparency-tweaks: off; /* turn on to remove some elements for better transparency */
+  --remove-bg-layer: off; /* turn on to remove the base --bg-3 layer for use with window transparency (WILL OVERRIDE BACKGROUND IMAGE) */
+  --panel-blur: off; /* turn on to blur the background of panels */
+  --blur-amount: 12px; /* amount of blur */
+  --bg-floating: #f9f9fe; /* you can set this to a more opaque color if floating panels look too transparent */
+  /* chatbar options */
+  --custom-chatbar: off; /* off: default chatbar, separated: chatbar separated from chat */
+  --chatbar-height: 47px; /* height of the chatbar (56px by default, 47px to align with user panel, 56px recommended for separated) */
+  /* other options */
+  --small-user-panel: off; /* off: default user panel, on: smaller user panel like in old discord */
+}
+
+/* color options */
+:root {
+  --colors: on; /* turn off to use discord default colors */
+  /* text colors */
+  --text-0: #f7f9ff; /* text on colored elements */
+  --text-1: rgb(25.0814479638%, 27.8076923077%, 31.6244343891%); /* bright text on colored elements */
+  --text-2: rgb(21.560331825%, 23.9038461538%, 27.1847662142%); /* headings and important text */
+  --text-3: #2e333a; /* normal text */
+  --text-4: #767b83; /* icon buttons and channels */
+  --text-5: #767b83; /* muted channels/chats and timestamps */
+  /* background and dark colors */
+  --bg-1: #dee3ec; /* dark buttons when clicked */
+  --bg-2: #e5e8f0; /* dark buttons */
+  --bg-3: #f9f9fe; /* spacing, secondary elements */
+  --bg-4: #ebeef5; /* main background color */
+  --hover: rgba(46, 51, 58, 0.08); /* channels and buttons when hovered */
+  --active: rgba(46, 51, 58, 0.1); /* channels and buttons when clicked or selected */
+  --active-2: rgba(46, 51, 58, 0.2); /* extra state for transparent buttons */
+  --message-hover: rgba(46, 51, 58, 0.08); /* messages when hovered */
+  /* accent colors */
+  --accent-1: var(--blue-1); /* links and other accent text */
+  --accent-2: var(--blue-2); /* small accent elements */
+  --accent-3: var(--blue-3); /* accent buttons */
+  --accent-4: var(--blue-4); /* accent buttons when hovered */
+  --accent-5: var(--blue-5); /* accent buttons when clicked */
+  --accent-new: #a83836; /* stuff that's normally red like mute/deafen buttons */
+  --mention: linear-gradient(
+      to right,
+      color-mix(in hsl, var(--blue-2), transparent 90%) 40%,
+      transparent
+  ); /* background of messages that mention you */
+  --mention-hover: linear-gradient(
+      to right,
+      color-mix(in hsl, var(--blue-2), transparent 95%) 40%,
+      transparent
+  ); /* background of messages that mention you when hovered */
+  --reply: linear-gradient(
+      to right,
+      color-mix(in hsl, var(--text-3), transparent 90%) 40%,
+      transparent
+  ); /* background of messages that reply to you */
+  --reply-hover: linear-gradient(
+      to right,
+      color-mix(in hsl, var(--text-3), transparent 95%) 40%,
+      transparent
+  ); /* background of messages that reply to you when hovered */
+  /* status indicator colors */
+  --online: var(--green-2); /* change to #43a25a for default */
+  --dnd: var(--red-2); /* change to #d83a42 for default */
+  --idle: var(--yellow-2); /* change to #ca9654 for default */
+  --streaming: var(--purple-2); /* change to #593695 for default */
+  --offline: var(--text-4); /* change to #83838b for default offline color */
+  /* border colors */
+  --border-light: rgba(118, 123, 131, 0); /* light border color */
+  --border: rgba(118, 123, 131, 0.2); /* normal border color */
+  --button-border: rgba(118, 123, 131, 0); /* neutral border color of buttons */
+  /* base colors */
+  --red-1: #a83836;
+  --red-2: rgb(62.5882352941%, 20.862745098%, 20.1176470588%);
+  --red-3: rgb(59.2941176471%, 19.7647058824%, 19.0588235294%);
+  --red-4: rgb(56%, 18.6666666667%, 18%);
+  --red-5: rgb(52.7058823529%, 17.568627451%, 16.9411764706%);
+  --green-1: #00789d;
+  --green-2: rgb(0%, 44.7058823529%, 58.4901960784%);
+  --green-3: rgb(0%, 42.3529411765%, 55.4117647059%);
+  --green-4: rgb(0%, 40%, 52.3333333333%);
+  --green-5: rgb(0%, 37.6470588235%, 49.2549019608%);
+  --blue-1: #3e6188;
+  --blue-2: rgb(23.0980392157%, 36.137254902%, 50.6666666667%);
+  --blue-3: rgb(21.8823529412%, 34.2352941176%, 48%);
+  --blue-4: rgb(20.6666666667%, 32.3333333333%, 45.3333333333%);
+  --blue-5: rgb(19.4509803922%, 30.431372549%, 42.6666666667%);
+  --yellow-1: #ac62b4;
+  --yellow-2: rgb(65.5008451657%, 34.7425625423%, 68.8260649087%);
+  --yellow-3: rgb(63.0152129817%, 31.7190669371%, 66.3985801217%);
+  --yellow-4: rgb(59.5143678161%, 29.9568965517%, 62.7097701149%);
+  --yellow-5: rgb(56.0135226504%, 28.1947261663%, 59.0209601082%);
+  --purple-1: #0052a8;
+  --purple-2: rgb(0%, 30.5490196078%, 62.5882352941%);
+  --purple-3: rgb(0%, 28.9411764706%, 59.2941176471%);
+  --purple-4: rgb(0%, 27.3333333333%, 56%);
+  --purple-5: rgb(0%, 25.7254901961%, 52.7058823529%);
+}

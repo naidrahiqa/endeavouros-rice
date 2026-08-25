@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+  <action>
+    <icon>utilities-terminal</icon>
+    <name>Open Terminal Here</name>
+    <unique-id>1</unique-id>
+    <command>kitty --working-directory %f</command>
+    <description>Open kitty terminal in current directory</description>
+    <patterns>*</patterns>
+    <directories/>
+  </action>
+  <action>
+    <icon>edit-copy</icon>
+    <name>Copy File Path</name>
+    <unique-id>2</unique-id>
+    <command>echo -n %f | wl-copy</command>
+    <description>Copy full file path to clipboard</description>
+    <patterns>*</patterns>
+    <directories/>
+  </action>
+  <action>
+    <icon>text-x-script</icon>
+    <name>Open as Root</name>
+    <unique-id>3</unique-id>
+    <command>pkexec thunar %f</command>
+    <description>Open file/directory as root</description>
+    <patterns>*</patterns>
+    <directories/>
+  </action>
+  <action>
+    <icon>file-compress</icon>
+    <name>Extract Here</name>
+    <unique-id>4</unique-id>
+    <command>file-roller --extract-here %f</command>
+    <description>Extract archive to current directory</description>
+    <patterns>*.tar.gz;*.tar.bz2;*.tar.xz;*.zip;*.7z;*.rar</patterns>
+  </action>
+  <action>
+    <icon>file-compress</icon>
+    <name>Compress...</name>
+    <unique-id>5</unique-id>
+    <command>file-roller %f</command>
+    <description>Compress files</description>
+    <patterns>*</patterns>
+    <directories/>
+  </action>
+  <action>
+    <icon>image-x-generic</icon>
+    <name>Open with Image Viewer</name>
+    <unique-id>6</unique-id>
+    <command>eog %f</command>
+    <description>Open image with Eye of GNOME</description>
+    <patterns>*.png;*.jpg;*.jpeg;*.gif;*.webp;*.svg</patterns>
+  </action>
+  <action>
+    <icon>video-x-generic</icon>
+    <name>Open with MPV</name>
+    <unique-id>7</unique-id>
+    <command>mpv %f</command>
+    <description>Open video with MPV player</description>
+    <patterns>*.mp4;*.mkv;*.avi;*.mov;*.webm;*.flv</patterns>
+  </action>
+  <action>
+    <icon>audio-x-generic</icon>
+    <name>Open with MPV (Audio)</name>
+    <unique-id>8</unique-id>
+    <command>mpv %f</command>
+    <description>Play audio with MPV</description>
+    <patterns>*.mp3;*.flac;*.wav;*.ogg;*.m4a;*.aac</patterns>
+  </action>
+</actions>

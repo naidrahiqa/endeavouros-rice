@@ -1,0 +1,57 @@
+# Pastel macOS color scheme for lsd
+permission:
+  read: "#A8C8F0"
+  write: "#FFB3B3"
+  execute: "#B5E8B5"
+  stale: "#6C7086"
+
+file-type:
+  directory: "#D4B3F0"
+  file: "#CDD6F4"
+  executable: "#B5E8B5"
+  symlink: "#A8C8F0"
+  pipe: "#FFD4B3"
+  socket: "#FFD4B3"
+  character-device: "#FFD4B3"
+  block-device: "#FFD4B3"
+  orphan: "#FFB3B3"
+  door: "#FFD4B3"
+
+name:
+  directory: "#D4B3F0"
+  file: "#CDD6F4"
+  executable: "#B5E8B5"
+  symlink: "#A8C8F0"
+  pipe: "#FFD4B3"
+  socket: "#FFD4B3"
+  character-device: "#FFD4B3"
+  block-device: "#FFD4B3"
+  orphan: "#FFB3B3"
+  door: "#FFD4B3"
+
+size:
+  none: "#6C7086"
+  small: "#A8C8F0"
+  medium: "#D4B3F0"
+  large: "#FFB3B3"
+  huge: "#FF7A93"
+
+date:
+  date: "#FFF0A0"
+  hour: "#FFD4B3"
+
+inode:
+  valid: "#D4B3F0"
+  invalid: "#6C7086"
+
+links:
+  valid: "#B5E8B5"
+  invalid: "#FFB3B3"
+
+git:
+  clean: "#B5E8B5"
+  dirty: "#FFF0A0"
+  ignored: "#6C7086"
+  untracked: "#A8C8F0"
+  staged: "#D4B3F0"
+  conflicted: "#FFB3B3"

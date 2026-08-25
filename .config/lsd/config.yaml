@@ -1,0 +1,27 @@
+icons:
+  when: always
+  theme: fancy
+  separator: " "
+
+color:
+  when: auto
+  theme: custom
+
+sorting:
+  directory: first
+
+blocks:
+  - permission
+  - user
+  - group
+  - size
+  - date
+  - name
+
+date: relative
+
+header: false
+
+layout: tree
+
+classic: false
