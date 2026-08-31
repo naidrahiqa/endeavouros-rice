@@ -1,0 +1,4 @@
+# Ignore file sensitif atau cache
+*.log
+*.tmp
+.cache/
